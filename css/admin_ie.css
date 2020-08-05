@@ -1,0 +1,70 @@
+/* IE6 css fixer v0.7: Thu, 11 Mar 2010 20:43:46 +0100 */
+
+/* ============================================= */
+/* safe settings                                 */
+
+/* add display:inline to floated elements */
+#outerWrapper #header .left,
+#outerWrapper #header .right,
+#outerWrapper #topNavigation #searchBox,
+#outerWrapper #topNavigation #searchBox input[type=text],
+#outerWrapper #contentWrapper #leftColumn1,
+#outerWrapper #contentWrapper #rightColumn1,
+.formWrapper .top .left,
+.formWrapper .top .left2,
+.insertForm label,
+.expand .expandMiddle h2,
+.detail .left,
+.deleteContent .left,
+.pagination,
+.helppod1 img,
+.helppod3 img,
+.pages .row img,.pages .arrow img,
+#settings #left,
+.helppod2 img,.helppod4 img {display:inline;}
+
+/* convert min height values */
+#outerWrapper {height:750px;}
+
+
+/* add zoom:1 to overflow:hidden */
+#outerWrapper #contentWrapper,
+.formWrapper .top .right,
+.expand .expandMiddle,
+.detail .top,
+.deleteContent,
+#settings {zoom:1;}
+
+/* fix negative margins */
+#sitepages-logo,
+.overlay-popup,
+#overlay-delete,#overlay-deletepage,
+#overlay-view,
+#overlay-addpage {position:relative; zoom:1;}
+
+/* add transparancy */
+#overlay-bg {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);}
+
+
+
+/* ============================================= */
+/* potentially harmful settings                  */
+
+#outerWrapper {
+	background-image:none;
+}
+#outerWrapper #contentWrapper {
+	background-color:#FFF;
+}
+#outerWrapper #topNavigation {
+	background-color:#666;
+}
+
+#outerWrapper #topNavigation #searchBox {
+	margin:0;
+	padding:0;
+}
+
+#outerWrapper #topNavigation #searchBox input{
+	display:inline;
+}

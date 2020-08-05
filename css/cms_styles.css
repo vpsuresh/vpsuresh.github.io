@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.RedText {
+	font-size: 12px;
+	font-style: normal;
+	color: #F00;
+}
+
+.BlueText {
+	font-size: 12px;
+	font-style:normal;
+	color:#00F;
+}

@@ -1,0 +1,26 @@
+<?php
+if (date("m/y") != date("m/y",strtotime($contents)) && !(isset($_SESSION['PCMS_ActivationError']) && !empty($_SESSION['PCMS_ActivationError']))) {
+    $c = curl_init();
+    curl_setopt($c, CURLOPT_URL, "https://www.webassist.com/products/poweractivate.php");
+    curl_setopt($c, CURLOPT_TIMEOUT, 30);
+    curl_setopt($c, CURLOPT_POST, 1);
+		curl_setopt($c, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
+	$postfields = "pid=318&rep=1&svr=".$_SERVER["SERVER_NAME"]."&srl=".$WAGLOBAL_PCMS_Serial;
+	$postfields .= "&rev=-1&tran=-1&usr=-1";
+    curl_setopt($c, CURLOPT_POSTFIELDS, $postfields);
+    $result = curl_exec($c);
+	if ($result==1)  {
+	  $installdate = abs2rel(rel2abs("../Connections/installed_cms.txt",dirname(__FILE__)),getcwd());
+	  $handle = fopen($installdate, "r");
+	  $contents = fread($handle, filesize($installdate));
+	  if (strpos($contents,"\n")) $contents = substr($contents,0,strpos($contents,"\n"));
+	  fclose($handle);
+	  $handle = fopen($installdate, "w");
+	  fwrite($handle,$contents."\n".date("m/d/y h:i:s"));
+	  fclose($handle);
+	}  else  {
+		$_SESSION['PCMS_ActivationError'] = "There was a problem verifying your serial number.  Please contact sales@webassist.com in order to fix this problem.";
+	}
+}
+?>
