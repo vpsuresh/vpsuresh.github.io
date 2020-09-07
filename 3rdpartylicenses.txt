@@ -63,7 +63,7 @@ MIT
 @angular/router
 MIT
 
-angular-responsive-carousel
+angular-gallery
 Apache License 2.0
 
 bootstrap
