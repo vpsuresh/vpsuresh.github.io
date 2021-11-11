@@ -1,234 +1,559 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MAVI's Homes</title>
-    <meta name="description" content="MAVI's Homes">
-    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <!-- custom.css -->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- bootstrap.min.css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- font-awesome -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
-    <!-- AOS -->
-    <link rel="stylesheet" href="css/aos.css">
+    <meta charset="utf-8">
+
+    <!--====== Title ======-->
+    <title>VIBI Homes</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
-    <!-- banner -->
-    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/banner-bk.jpg);">
-        <div class="container text-center text-md-left">
-            <header>
-                <div class="row justify-content-between">
-                    <div class="col-2">
-                        <img src="img/logo.png" alt="logo">
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
                     </div>
-                    <!--div class="col-6 align-self-center text-right">
-                        <a href="#" class="text-white lead">Get Early Access</a>
-                    </!--div-->
-                </div>
-            </header>
-            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
-            	MAVI's Homes
-            </h1>
-            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
-               Text here
-            </p>
-            <!a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</!a>
-        </div>
-    </div>
-    <!-- three-blcok -->
-    <div class="container my-5 py-2">
-        <h2 class="text-center font-weight-bold my-5">MAVI's Advantages</h2>
-        <div class="row">
-            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img src="img/smart-protect-1.jpg" alt="Anti-spam" class="mx-auto">
-                <h4>Airport</h4>
-                <p>Only 15 kilometers</p>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img src="img/smart-protect-2.jpg" alt="Phishing Detect" class="mx-auto">
-                <h4>Calicut City</h4>
-                <p>8 KMs away</p>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <img src="img/smart-protect-3.jpg" alt="Smart Scan" class="mx-auto">
-                <h4>Schools/Hospitals</h4>
-                <p>near by</p>
-            </div>
-        </div>
-    </div>
-    <!-- feature (skew background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
-        <div class="container my-5">
-            <div class="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
-                    <h2 class="font-weight-bold">Some heading</h2>
-                    <p class="my-4">Some text</p>
-                   
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
-                    <img src="img/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- feature (green background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
-        <div class="container">
-            <div class="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
-                    <h2 class="font-weight-bold">Some heading</h2>
-                    <p class="my-4">
-                        Some text,
-                        <br>  Some text
-                    </p>
-                    
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
-                    <img src="img/feature-2.png" alt="Safe and reliable" class="mx-auto d-block">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- price table -->
-    <div class="container my-5 py-2" id="price-table">
-        <h2 class="text-center font-weight-bold d-block mb-3">Pricing</h2>
-        <div class="row">
-            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
-                <h4 class="my-4">Basic</h4>
-                <p class="font-weight-bold"> <span class="display-2 font-weight-bold"> ₹30</span> Lakhs</p>
-                <ul class="list-unstyled">
-                    <li>LProperty 1</li>
-                    <li>Property 2 </li>
-                    <li>Property 3</li>
-                    <li>Property 4</li>
-                 
-                </ul>
-               
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
-                <h4 class="my-4">Starter</h4>
-                <p class="font-weight-bold"> <span class="display-2 font-weight-bold"> ₹50</span> Lakhs</p>
-                <ul class="list-unstyled">
-                    <li>LProperty 1</li>
-                    <li>Property 2 </li>
-                    <li>Property 3</li>
-                    <li>Property 4</li>
-                </ul>
-               
-            </div>
-            <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
-                <h4 class="my-4">Premium</h4>
-                <p class="font-weight-bold"><span class="display-2 font-weight-bold"> ₹76</span> Lakhs</p>
-                <ul class="list-unstyled">
-                    <li>LProperty 1</li>
-                    <li>Property 2 </li>
-                    <li>Property 3</li>
-                    <li>Property 4</li>
-                </ul>
-               
-            </div>
-        </div>
-    </div>
-    <!-- client -->
-    <!--div class="jumbotron jumbotron-fluid">
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <section class="header_area">
+        <div class="header_navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#services">Location</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Contact</a>
+                                    </li>
+
+                                    <!--
+                                      <li class="nav-item">
+                                        <a class="page-scroll" href="#gallery">Gallery</a>
+
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#services">Services</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#team">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#testimonial">Clients</a>
+                                    </li>
+                                    -->
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+
+        <div id="home" class="header_slider">
+            <div class="single_slider bg_cover d-flex align-items-center" style="background-image: url(assets/images/about_bg.jpg)">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10">
+                            <div class="slider_content">
+                                <h2 class="slider_title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Home Is Where Your Stroy Begins</h2>
+                                <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">Marketing Text</p>
+                              <!--  <a href="#services" class="main-btn wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.8s">All Services</a>-->
+                            </div> <!-- slider content -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- single slider -->
+        </div> <!-- header slider -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+
+
+
+    <!--====== Location PART START ======-->
+
+    <section id="location" class="about_area pt-80 pb-130">
+        <div class="about_bg d-none d-lg-block">
+
+           <!-- row -->
+        </div> <!-- about bg -->
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="row">
+                  <div class="col-lg-12">
+
+                  </div>
+              </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== Location PART ENDS ======-->
+    <!--====== ABOUT PART START ======-->
+
+    <section id="about" class="about_area pt-80 pb-130">
+        <div class="about_bg d-none d-lg-block">
+            <div class="about_bg_image bg_cover" style="background-image: url(assets/images/about_bg.jpg)"></div>
+        </div> <!-- about bg -->
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <div class="about_content mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <h3 class="sub_title"><span>L</span>ocation</h3>
+                        <h4 class="main_title">Location info</h4>
+                        <p>Marketing text</p>
+                        <a href="#" class="main-btn">Read More</a>
+                    </div> <!-- about content -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="about_content mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
+
+                          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Pantheerankavu+Jct,+Kodal+Nadakkavu,+Pantheeramkavu,+Kerala+673019,+India/@11.2335523,75.8557329,16.71z/data=!4m5!3m4!1s0x3ba65baaf2355797:0x3180e5680400e07e!8m2!3d11.2306172!4d75.8516648?h=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                      </div>
+                    </div> <!-- about content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT PART ENDS ======-->
+    <!--====== SERVICES PART START ======-->
+
+    <section id="services" class="services_area pt-120">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-1.png" class="mx-auto d-block">
+                <div class="col-lg-6">
+                    <div class="section_title">
+                        <h4 class="title">Available Models</h4>
+                    </div> <!-- section title -->
                 </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-2.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-3.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-4.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-5.png" class="mx-auto d-block">
-                </div>
-                <div class="col-sm-4 col-md-2 py-2 align-self-center">
-                    <img src="img/client-6.png" class="mx-auto d-block">
-                </div>
-            </div>
-        </div>
-    </!--div>
-    <!-- contact -->
-    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg);">
-        <div class="container my-5">
-            <div class="row justify-content-between">
-                <div class="col-md-6 text-white">
-                    <h2 class="font-weight-bold">Contact Us</h2>
-                    <p class="my-4">
-                       Please feel free contact us
-                    </p>
-                    <ul class="list-unstyled">
-                        <li>Email : sales@mavishomes.com</li>
-                        <li>Phone :914555555554</li>
-                        <li>Address : Kozhikode</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <form>
-                    	<div class="row">
-	                        <div class="form-group col-md-6">
-	                            <label for="name">Your Name</label>
-	                            <input type="name" class="form-control" id="name">
-	                        </div>
-	                        <div class="form-group col-md-6">
-	                            <label for="Email">Your Email</label>
-	                            <input type="email" class="form-control" id="Email">
-	                        </div>
-	                    </div>
-	                    <div class="form-group">
-	                        <label for="message">Message</label>
-	                        <textarea class="form-control" id="message" rows="3"></textarea>
-	                    </div>
-                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                 <!-- row -->
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
 
-	<!-- copyright -->
-	<div class="jumbotron jumbotron-fluid" id="copyright">
-        <div class="container">
-            <div class="row justify-content-between">
-            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
-                    Copyright © 2021 MAVI's Homes.
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="services_icon">
+                            <i class="lni lni-apartment"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Premium I </h4>
+                              <p>Bedrooms: 5 Bed 3 Bath </br>Area: 1600 Sqft</br>Lot size: 6 Cents</br>Floors: 2</br>Price: 76 Lakhs</br></p>
+
+                        </div>
+                    </div> <!-- single services -->
                 </div>
-                <!--div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
-                    <a href="#" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-medium" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </!--div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="services_icon">
+                            <i class="lni lni-apartment"></i>
+                        </div>
+                        <div class="services_content">
+                            <h4 class="title">Premium II </h4>
+                            <p>Bedrooms: 4 Bed 2 Bath </br>Area: 1400 Sqft</br>Lot size: 5.5 Cents</br>Floors: 2</br>Price: 66 Lakhs</br></p>
+                        </div>
+                    </div> <!-- single services -->
+
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                      <div class="services_icon">
+                          <i class="lni lni-apartment"></i>
+                      </div>
+                      <div class="services_content">
+                          <h4 class="title">Premium III </h4>
+                          <p>Bedrooms: 3 Bed 1 Bath </br>Area: 850 Sqft</br>Lot size: 3 Cents</br>Floors: 2</br>Price: 25 Lakhs</br></p>
+                      </div>
+                  </div> <!-- single services -->
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                      <div class="services_icon">
+                          <i class="lni lni-apartment"></i>
+                      </div>
+                      <div class="services_content">
+                          <h4 class="title">Budget I </h4>
+                          <p>Bedrooms: 4 Bed 3 Bath </br>Area: 1300 Sqft</br>Lot size: 5 Cents</br>Floors: 2</br>Price: 52 Lakhs</br></p>
+                      </div>
+                  </div> <!-- single services -->
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                      <div class="services_icon">
+                          <i class="lni lni-apartment"></i>
+                      </div>
+                      <div class="services_content">
+                          <h4 class="title">Budget II </h4>
+                          <p>Bedrooms: 3 Bed 2 Bath </br>Area: 1100 Sqft</br>Lot size: 4.5 Cents</br>Floors: 2</br>Price: 44 Lakhs</br></p>
+                      </div>
+                  </div> <!-- single services -->
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                      <div class="services_icon">
+                          <i class="lni lni-apartment"></i>
+                      </div>
+                      <div class="services_content">
+                          <h4 class="title">Budget III </h4>
+                          <p>Rooms: 3 Bed 2 Bath </br>Area: 900 Sqft</br>Lot size: 4 Cents</br>Floors: 2</br>Price: 36 Lakhs</br></p>
+                      </div>
+                  </div> <!-- single services -->
+
+                </div>
+                  <div class="col-lg-4 col-sm-6">
+                <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                    <div class="services_icon">
+                        <i class="lni lni-apartment"></i>
+                    </div>
+                    <div class="services_content">
+                        <h4 class="title">Cozy I </h4>
+                        <p>Rooms: 3 Bed 2 Bath </br>Area: 850 Sqft</br>Lot size: 3 Cents</br>Floors: 2</br>Price: 25 Lakhs</br></p>
+                    </div>
+                </div> <!-- single services -->
+                  </div>
+                <div class="single_services mt-50 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                    <div class="services_icon">
+                        <i class="lni lni-apartment"></i>
+                    </div>
+                    <div class="services_content">
+                        <h4 class="title">Cozy II</h4>
+                        <p>Bedrooms: 2 Bed 1 Bath </br>Area: 700 Sqft</br>Lot size: 3 Cents</br>Floors: 1</br>Price: 22 Lakhs</br></p>
+                    </div>
+                </div> <!-- single services -->
+              </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== GALLERY PART START ======-->
+
+    <section id="gallery" class="gallery_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title">Plans</h4>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single_galley border_radius_4 mt-30">
+                        <div class="galley_image">
+                            <img src="assets/images/gallery-1.jpg" alt="gallery">
+                        </div>
+                        <div class="galley_content">
+                            <h4 class="gallery_title"><a href="#">Modern House</a></h4>
+                            <p><span>New York, USA</span></p>
+                        </div>
+                    </div> <!-- single galley -->
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_galley border_radius_1 mt-30">
+                        <div class="galley_image">
+                            <img src="assets/images/gallery-2.jpg" alt="gallery">
+                        </div>
+                        <div class="galley_content">
+                            <h4 class="gallery_title"><a href="#">Modern House</a></h4>
+                            <p><span>New York, USA</span></p>
+                        </div>
+                    </div> <!-- single galley -->
+
+                    <div class="single_galley border_radius_2 mt-30">
+                        <div class="galley_image">
+                            <img src="assets/images/gallery-3.jpg" alt="gallery">
+                        </div>
+                        <div class="galley_content">
+                            <h4 class="gallery_title"><a href="#">Modern House</a></h4>
+                            <p><span>New York, USA</span></p>
+                        </div>
+                    </div> <!-- single galley -->
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_galley border_radius_4 mt-30">
+                        <div class="galley_image">
+                            <img src="assets/images/gallery-4.jpg" alt="gallery">
+                        </div>
+                        <div class="galley_content">
+                            <h4 class="gallery_title"><a href="#">Modern House</a></h4>
+                            <p><span>New York, USA</span></p>
+                        </div>
+                    </div> <!-- single galley -->
+
+                    <div class="single_galley border_radius_3 mt-30">
+                        <div class="galley_image">
+                            <img src="assets/images/gallery-5.jpg" alt="gallery">
+                        </div>
+                        <div class="galley_content">
+                            <h4 class="gallery_title"><a href="#">Modern House</a></h4>
+                            <p><span>New York, USA</span></p>
+                        </div>
+                    </div> <!-- single galley -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== GALLERY PART ENDS ======-->
+
+
+
+
+
+
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact_area pt-80 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact_form mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="section_title pb-25">
+                            <h4 class="title">Get In Touch</h4>
+                        </div> <!-- section title -->
+
+                        <form id="contact-form" action="assets/contact.php" method="post">
+                            <div class="single_form">
+                                <input name="name" type="text" placeholder="Name">
+                            </div> <!-- single form -->
+
+                            <div class="single_form">
+                                <input name="email" type="email" placeholder="Email">
+                            </div> <!-- single form -->
+
+                            <div class="single_form">
+                                <input name="subject" type="text" placeholder="Subject">
+                            </div> <!-- single form -->
+
+                            <div class="single_form">
+                                <input name="number" type="text" placeholder="Contact Number">
+                            </div> <!-- single form -->
+
+                            <div class="single_form">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div> <!-- single form -->
+
+                            <p class="form-message"></p>
+
+                            <div class="single_form">
+                                <button class="main-btn">SEND MESSAGE</button>
+                            </div> <!-- single form -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact_info mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                        <div class="section_title pb-25">
+                            <h4 class="title">Contact Us</h4>
+                        </div> <!-- section title -->
+                        <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.</p>
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-phone"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>+919878987654</p>
+                            </div>
+                        </div> <!-- single info -->
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-envelope"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>vibihomes@gmail.com</p>
+                            </div>
+                        </div> <!-- single info -->
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-world"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>www.vibihomes.com</p>
+                            </div>
+                        </div> <!-- single info -->
+
+                        <div class="single_info d-flex align-items-center">
+                            <div class="info_icon">
+                                <i class="lni lni-map"></i>
+                            </div>
+                            <div class="info_content media-body">
+                                <p>Kozhikode, Kerala </br>India</p>
+                            </div>
+                        </div> <!-- single info -->
+                    </div> <!-- contact info -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <section class="footer_area bg_cover" style="background-image: url(assets/images/footer_bg.jpg)">
+        <div class="container">
+            <div class="footer_widget pt-40 pb-130">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer_about mt-50">
+                            <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                            <p>text</p>
+                        </div> <!-- footer about -->
+                    </div>
+                    <!--div-- class="col-lg-8">
+                        <div class="footer_link_wrapper d-flex flex-wrap">
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Compnay</h4>
+                                <ul class="link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Service</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Support</h4>
+                                <ul class="link">
+                                    <li><a href="#">Terms & Condition</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Leal</a></li>
+                                    <li><a href="#">Leal</a></li>
+                                </ul>
+
+                            <div class="footer_link mt-45">
+                                <h4 class="footer_title">Socials</h4>
+                                <ul class="link">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instageam</a></li>
+                                    <li><a href="#">Linkdin</a></li>
+                                    <li><a href="#">Pintarest</a></li>
+                                </ul>
+                            </div> <!-- footer link -->
+                        </div> <!-- footer link wrapper -->
+                    </!--div-->
+                </div> <!-- row -->
+            </div> <!-- footer widget -->
+            <div class="footer_copyright text-center">
+                <p>Copyrignt VIBI Homes</p>
             </div>
-        </div>
-    </div>
-    
-    <!-- AOS -->
-    <script src="js/aos.js"></script>
-    <script>
-      AOS.init({
-      });
-    </script>
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

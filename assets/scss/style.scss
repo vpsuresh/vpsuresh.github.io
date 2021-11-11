@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Arch
+    Author: UIdeck
+    Author URI: uideck.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    01. Theme default CSS
+	02. Header
+    03. Hero
+	04. Footer
+
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixin';
+@import 'common';
+@import 'header';
+@import 'features';
+@import 'about';
+@import 'services';
+@import 'gallery';
+@import 'counter';
+@import 'team';
+@import 'testimonial';
+@import 'brand';
+@import 'contact';
+@import 'footer';

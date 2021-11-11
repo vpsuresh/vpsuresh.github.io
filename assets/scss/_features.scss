@@ -1,0 +1,41 @@
+
+
+
+/*===========================
+      03.FEATUREAS css 
+===========================*/
+
+.features_area{}
+
+.single_features{
+    & .features_image{
+        & img{
+            width: 100%;
+            border-radius: 40px;
+        }
+    }
+    & .features_content{
+        & .features_title{
+            & a{
+                font-size: 30px;
+                font-weight: 600;
+                color: $heading-color;
+                margin-top: 30px;
+                
+                @media #{$md}{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

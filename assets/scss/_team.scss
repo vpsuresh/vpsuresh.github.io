@@ -1,0 +1,111 @@
+
+
+
+/*===========================
+       08.TEAM css 
+===========================*/
+
+.team_area{}
+
+.single_team{
+    & .team_image{
+        position: relative;
+        overflow: hidden;
+        border-radius: 40px;
+        border-bottom-right-radius: 0;
+        
+        & img{
+            width: 100%;
+        }
+        
+        & .social{
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            @include transform(translateY(-50%));
+            
+            & li{
+                margin: 10px 0;
+                @include transition(0.3s);
+                @include transform(translateX(-100%));
+                opacity: 0;
+                
+                & a{
+                    width: 40px;
+                    height: 40px;
+                    line-height: 42px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: $white;
+                    font-size: 16px;
+                    color: $body-color;
+                    @include transition(0.3s);
+                    
+                    @media #{$md}{
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    & .team_content{
+        margin-top: 25px;
+        
+        & .team_name{
+            & a{
+                font-size: 20px;
+                font-weight: 600;
+                color: $heading-color;
+                @include transition(0.3s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        & p{
+            margin-top: 10px;
+        }
+    }
+    
+    &:hover{
+        & .team_image{
+            & .social{
+                & li{
+                    @include transform(translateX(0));
+                    opacity: 1;
+                    visibility: visible;
+                    
+                    &:nth-of-type(1){
+                        @include transition-delay(0.2s);
+                    }
+                    &:nth-of-type(2){
+                        @include transition-delay(0.3s);
+                    }
+                    &:nth-of-type(3){
+                        @include transition-delay(0.4s);
+                    }
+                    &:nth-of-type(4){
+                        @include transition-delay(0.5s);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
